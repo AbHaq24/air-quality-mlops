@@ -12,10 +12,9 @@ PROJECT_ROOT = os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))
 )
 
-sys.path.insert(0, PROJECT_ROOT)
+sys.path.insert(0, PROJECT_ROOT)  
 
 from src.feature_engineering import create_features, get_features
-
 
 DATA_PATH = os.path.join(
     PROJECT_ROOT,
