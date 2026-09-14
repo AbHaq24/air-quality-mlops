@@ -31,6 +31,9 @@ jobs:
       - name: Run Ruff
         run: python -m ruff check . --exclude notebooks
 
+      - name: Train model
+        run: python orchestration/train.py
+
       - name: Run MLOps pipeline
         run: python orchestration/pipeline.py
 
