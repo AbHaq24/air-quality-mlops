@@ -1,6 +1,5 @@
 import pandas as pd
 
-
 FEATURES = [
     "pm10",
     "carbon_monoxide",

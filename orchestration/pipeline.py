@@ -1,8 +1,8 @@
-import sys
 import os
+import sys
+
 import joblib
 import mlflow
-import pandas as pd
 
 # Add project root to Python path
 PROJECT_ROOT = os.path.dirname(
@@ -14,7 +14,6 @@ sys.path.insert(0, PROJECT_ROOT)
 from src.data_ingestion import update_air_quality_data
 from src.data_validation import validate_data
 from src.feature_engineering import create_features, get_features
-
 
 # Paths
 DATA_PATH = os.path.join(
@@ -67,7 +66,7 @@ def run_pipeline():
 
     X = get_features(feature_df)
 
-    y = feature_df["pm2_5"]
+   
 
     print(f"Feature shape: {X.shape}")
 
