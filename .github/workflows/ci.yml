@@ -29,7 +29,10 @@ jobs:
           pip install ruff pytest
 
       - name: Run Ruff
-        run: python -m ruff check . --exclude notebooks   
+        run: python -m ruff check . --exclude notebooks
+
+      - name: Run MLOps pipeline
+        run: python orchestration/pipeline.py
 
       - name: Run tests
         run: python -m pytest
