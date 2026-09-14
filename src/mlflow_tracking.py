@@ -1,7 +1,6 @@
+import joblib
 import mlflow
 import mlflow.sklearn
-import joblib
-import os
 
 MODEL_PATH = "models/linear_regression_pipeline.pkl"
 

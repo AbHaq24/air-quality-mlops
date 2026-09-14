@@ -1,6 +1,7 @@
-import requests
-import pandas as pd
 import os
+
+import pandas as pd
+import requests
 
 URL = "https://air-quality-api.open-meteo.com/v1/air-quality"
 
