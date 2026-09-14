@@ -7,3 +7,8 @@ mlruns/
 mlflow.db
 
 *.log
+.pytest_cache/
+.ruff_cache/
+
+.pytest_cache/
+.ruff_cache/
